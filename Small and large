@@ -1,0 +1,14 @@
+int main(){
+    int a,b,c,d;
+    printf("enter any four values:");
+    scanf("%d%d%d%d",&a,&b,&c,&d);
+    int small=a<b && b<c && c<d? a:(b<c && c<d)? b:(c<d?c:d);
+    printf("%d",small);
+    int big=a>b && b>c && c>d? a:(b>c && c>d)? b:(c>d?c:d);
+    
+    printf("\n");
+    printf("%d",big);
+    printf("\n");
+
+    return 0;
+}
